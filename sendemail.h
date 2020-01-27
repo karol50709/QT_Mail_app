@@ -37,10 +37,15 @@ public:
 
     static EmailAddress * stringToEmail(const QString & str);
 
+    SendEmail(QWidget *parent, QString user, QString password,int port);
+
 private slots:
     void on_addAttachment_clicked();
 
     void on_sendEmail_clicked();
+
+protected:
+    void dropEvent(QDropEvent* event);
 
 private:
     Ui::SendEmail *ui;

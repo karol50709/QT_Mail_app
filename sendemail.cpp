@@ -32,6 +32,16 @@ SendEmail::SendEmail(QWidget *parent) :
     ui->setupUi(this);
 }
 
+SendEmail::SendEmail(QWidget *parent,QString user, QString password,int port) :
+    QWidget(parent),
+    ui(new Ui::SendEmail)
+{
+    ui->setupUi(this);
+    ui->username->setText(user);
+    ui->password->setText(password);
+    ui->port->setValue(port);
+}
+
 SendEmail::~SendEmail()
 {
     delete ui;
@@ -64,6 +74,10 @@ void SendEmail::on_addAttachment_clicked()
         ui->attachments->addItems(dialog.selectedFiles());
 
 
+}
+
+void SendEmail::dropEvent(QDropEvent* event){
+    qDebug()<<"is worked";
 }
 
 void SendEmail::on_sendEmail_clicked()
@@ -139,3 +153,5 @@ void SendEmail::errorMessage(const QString &message)
 
     err.exec();
 }
+
+
