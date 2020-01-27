@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "sendemail.h"
+
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -15,7 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    SendEmail * sendEmail;
 };
 #endif // MAINWINDOW_H

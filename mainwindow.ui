@@ -14,26 +14,18 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>160</width>
-      <height>741</height>
+      <x>10</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QTreeWidget" name="treeWidget">
-       <column>
-        <property name="text">
-         <string notr="true">1</string>
-        </property>
-       </column>
-      </widget>
-     </item>
-    </layout>
+    <property name="text">
+     <string>Nowy mail</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

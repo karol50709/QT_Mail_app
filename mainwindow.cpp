@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "sendemail.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -13,3 +14,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+    sendEmail = new SendEmail();
+    sendEmail->show();
+
+}
