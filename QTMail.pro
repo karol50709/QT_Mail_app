@@ -30,7 +30,8 @@ SOURCES += \
     lib/smtpclient.cpp \
     main.cpp \
     mainwindow.cpp \
-    sendemail.cpp
+    sendemail.cpp \
+    tabwidgetsettings.cpp
 
 HEADERS += \
     lib/SmtpMime \
@@ -48,11 +49,13 @@ HEADERS += \
     lib/smtpclient.h \
     lib/smtpexports.h \
     mainwindow.h \
-    sendemail.h
+    sendemail.h \
+    tabwidgetsettings.h
 
 FORMS += \
     mainwindow.ui \
-    sendemail.ui
+    sendemail.ui \
+    tabwidgetsettings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

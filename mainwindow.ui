@@ -46,6 +46,7 @@
     <property name="title">
      <string>Ustawienia</string>
     </property>
+    <addaction name="actionObs_uga_kont_mailowych"/>
    </widget>
    <widget class="QMenu" name="menuPomoc">
     <property name="title">
@@ -57,6 +58,11 @@
    <addaction name="menuPomoc"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionObs_uga_kont_mailowych">
+   <property name="text">
+    <string>Obsługa kont mailowych</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

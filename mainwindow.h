@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "sendemail.h"
+#include "tabwidgetsettings.h"
 
 #include <QMainWindow>
 
@@ -20,8 +21,11 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_actionObs_uga_kont_mailowych_triggered();
+
 private:
     Ui::MainWindow *ui;
     SendEmail * sendEmail;
+    TabWidgetSettings *tabWidgetSettings;
 };
 #endif // MAINWINDOW_H
