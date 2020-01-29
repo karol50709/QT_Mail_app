@@ -30,5 +30,5 @@ void TabWidgetSettings::on_pushButton_3_clicked()
 
 void TabWidgetSettings::on_pushButton_2_clicked()
 {
-
+    QMetaObject::invokeMethod( this, "close", Qt::QueuedConnection );
 }
