@@ -28,6 +28,7 @@ SOURCES += \
     lib/mimetext.cpp \
     lib/quotedprintable.cpp \
     lib/smtpclient.cpp \
+    login.cpp \
     main.cpp \
     mainwindow.cpp \
     sendemail.cpp \
@@ -48,6 +49,7 @@ HEADERS += \
     lib/quotedprintable.h \
     lib/smtpclient.h \
     lib/smtpexports.h \
+    login.h \
     mainwindow.h \
     sendemail.h \
     tabwidgetsettings.h

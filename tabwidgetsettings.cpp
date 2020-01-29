@@ -1,11 +1,17 @@
+#include "login.h"
 #include "tabwidgetsettings.h"
 #include "ui_tabwidgetsettings.h"
+
+#include <QSettings>
+
 
 TabWidgetSettings::TabWidgetSettings(QWidget *parent) :
     QTabWidget(parent),
     ui(new Ui::TabWidgetSettings)
 {
     ui->setupUi(this);
+    QList<Login> loginy;
+    QSettings settings;
 }
 
 TabWidgetSettings::~TabWidgetSettings()

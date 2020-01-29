@@ -17,14 +17,34 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>0</x>
+      <y>0</y>
       <width>80</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
      <string>Nowy mail</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>181</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>250</y>
+      <width>131</width>
+      <height>301</height>
+     </rect>
     </property>
    </widget>
   </widget>
