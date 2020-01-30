@@ -32,6 +32,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     sendemail.cpp \
+    stale.cpp \
     tabwidgetsettings.cpp
 
 HEADERS += \
@@ -52,6 +53,7 @@ HEADERS += \
     login.h \
     mainwindow.h \
     sendemail.h \
+    stale.h \
     tabwidgetsettings.h
 
 FORMS += \

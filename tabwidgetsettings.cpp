@@ -1,7 +1,7 @@
 #include "login.h"
 #include "tabwidgetsettings.h"
 #include "ui_tabwidgetsettings.h"
-
+#include "stale.h"
 #include <QSettings>
 
 
@@ -37,4 +37,9 @@ void TabWidgetSettings::on_pushButton_3_clicked()
 void TabWidgetSettings::on_pushButton_2_clicked()
 {
     QMetaObject::invokeMethod( this, "close", Qt::QueuedConnection );
+}
+
+void TabWidgetSettings::loadSettings()
+{
+ //QSettings settings(new Stale()., QSettings::NativeFormat);
 }

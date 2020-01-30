@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->maile->setColumnCount(4);
+    ui->maile->setHorizontalHeaderLabels(QStringList()<< tr("Temat")<< tr("Nadawca")<< tr("Data")<< tr("Etykieta"));
 }
 
 MainWindow::~MainWindow()
@@ -28,3 +30,5 @@ void MainWindow::on_actionObs_uga_kont_mailowych_triggered()
     tabWidgetSettings = new TabWidgetSettings();
     tabWidgetSettings->show();
 }
+
+

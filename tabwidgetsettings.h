@@ -24,6 +24,7 @@ private slots:
 
 private:
     Ui::TabWidgetSettings *ui;
+    void loadSettings();
 };
 
 #endif // TABWIDGETSETTINGS_H
