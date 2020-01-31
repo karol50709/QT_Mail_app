@@ -27,5 +27,6 @@ private:
     Ui::MainWindow *ui;
     SendEmail * sendEmail;
     TabWidgetSettings *tabWidgetSettings;
+    void dodajNowyMailDoTabeli(QString temat, QString nadawca, QString Data, QString etykieta);
 };
 #endif // MAINWINDOW_H

@@ -33,7 +33,8 @@ SOURCES += \
     mainwindow.cpp \
     sendemail.cpp \
     stale.cpp \
-    tabwidgetsettings.cpp
+    tabwidgetsettings.cpp \
+    wiadomosc.cpp
 
 HEADERS += \
     lib/SmtpMime \
@@ -54,7 +55,8 @@ HEADERS += \
     mainwindow.h \
     sendemail.h \
     stale.h \
-    tabwidgetsettings.h
+    tabwidgetsettings.h \
+    wiadomosc.h
 
 FORMS += \
     mainwindow.ui \
