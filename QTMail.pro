@@ -28,9 +28,14 @@ SOURCES += \
     lib/mimetext.cpp \
     lib/quotedprintable.cpp \
     lib/smtpclient.cpp \
+    login.cpp \
+    loginy.cpp \
     main.cpp \
     mainwindow.cpp \
-    sendemail.cpp
+    sendemail.cpp \
+    stale.cpp \
+    tabwidgetsettings.cpp \
+    wiadomosc.cpp
 
 HEADERS += \
     lib/SmtpMime \
@@ -47,12 +52,18 @@ HEADERS += \
     lib/quotedprintable.h \
     lib/smtpclient.h \
     lib/smtpexports.h \
+    login.h \
+    loginy.h \
     mainwindow.h \
-    sendemail.h
+    sendemail.h \
+    stale.h \
+    tabwidgetsettings.h \
+    wiadomosc.h
 
 FORMS += \
     mainwindow.ui \
-    sendemail.ui
+    sendemail.ui \
+    tabwidgetsettings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
