@@ -23,10 +23,13 @@ private slots:
 
     void on_actionObs_uga_kont_mailowych_triggered();
 
+    void on_maile_cellClicked(int row, int column);
+
 private:
     Ui::MainWindow *ui;
     SendEmail * sendEmail;
     TabWidgetSettings *tabWidgetSettings;
     void dodajNowyMailDoTabeli(QString temat, QString nadawca, QString Data, QString etykieta);
+    void zaladujKontaDoTabeli();
 };
 #endif // MAINWINDOW_H

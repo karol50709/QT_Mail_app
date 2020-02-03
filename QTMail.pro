@@ -29,6 +29,7 @@ SOURCES += \
     lib/quotedprintable.cpp \
     lib/smtpclient.cpp \
     login.cpp \
+    loginy.cpp \
     main.cpp \
     mainwindow.cpp \
     sendemail.cpp \
@@ -52,6 +53,7 @@ HEADERS += \
     lib/smtpclient.h \
     lib/smtpexports.h \
     login.h \
+    loginy.h \
     mainwindow.h \
     sendemail.h \
     stale.h \

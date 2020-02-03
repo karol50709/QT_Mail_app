@@ -3,8 +3,9 @@
 
 #include <QString>
 
-struct Login
+class Login
 {
+public:
     QString host;
     QString login;
     QString haslo;
