@@ -26,6 +26,8 @@ private slots:
 
     void on_maile_cellClicked(int row, int column);
 
+    void on_actionOd_wie_list_maili_triggered();
+
 private:
     Ui::MainWindow *ui;
     SendEmail * sendEmail;

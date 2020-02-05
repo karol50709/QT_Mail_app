@@ -167,6 +167,7 @@
      <string>Ustawienia</string>
     </property>
     <addaction name="actionObs_uga_kont_mailowych"/>
+    <addaction name="actionOd_wie_list_maili"/>
    </widget>
    <widget class="QMenu" name="menuPomoc">
     <property name="title">
@@ -181,6 +182,11 @@
   <action name="actionObs_uga_kont_mailowych">
    <property name="text">
     <string>Obsługa kont mailowych</string>
+   </property>
+  </action>
+  <action name="actionOd_wie_list_maili">
+   <property name="text">
+    <string>Odśwież listę maili</string>
    </property>
   </action>
  </widget>

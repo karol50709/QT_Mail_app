@@ -70,11 +70,27 @@ void TabWidgetSettings::loadSettings()
 
 void TabWidgetSettings::on_pushButton_5_clicked()
 {
+    ui->listWidget->clear();
     QSqlQuery query1 ;
     query1.exec("select * from konf_mail");
     while (query1.next()) {
         //QModelIndex index = model->index(model->rowCount()-1)
         ui->listWidget->addItem(query1.value("mail_login").toString());
         //ui->listWidget->addItem(query1.value("mail_login").toString());
+    }
 }
+
+void TabWidgetSettings::on_pushButton_clicked()
+{
+    QList<QListWidgetItem *> localSelectedItems = ui->listWidget->selectedItems();
+    for (int x =0;x<localSelectedItems.size();x++) {
+        qDebug()<<localSelectedItems.takeAt(x)->text();
+        QSqlQuery query1 ;
+        QString sQuery1 = "Delete from konf_mail where mail_login='Karol@poczta.pl'";
+        query1.prepare(sQuery1);
+        query1.bindValue(":mail_login",localSelectedItems.takeAt(x)->text());
+        query1.exec();
+
+    }
+    on_pushButton_5_clicked();
 }

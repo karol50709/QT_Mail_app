@@ -68,3 +68,8 @@ void MainWindow::on_maile_cellClicked(int row, int column)
 {
     qDebug()<<"kliknieta komorka: "<<row;
 }
+
+void MainWindow::on_actionOd_wie_list_maili_triggered()
+{
+    zaladujKontaDoTabeli();
+}

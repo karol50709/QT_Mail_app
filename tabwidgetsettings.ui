@@ -137,7 +137,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Usuń zaznaczony</string>
+     <string>Usuń zaznaczone</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">

@@ -21,26 +21,8 @@ int main(int argc, char *argv[])
     else {
         qDebug()<< db.lastError().text();
     }
-    QSqlQuery query1 ;
-    QString sQuery1 = "Insert into people (id,firstname,lastname) values (1, :first, :last)";
-    query1.prepare(sQuery1);
-    query1.bindValue(":first","Jan");
-    query1.bindValue(":last","kowalski");
-    query1.exec();
-
-    QSqlQuery query2;
-    if(query2.exec("select * from people")){
-        while(query2.next()){
-            qDebug()<<query2.value("firstname").toString();
-            qDebug()<<query2.value("lastname").toString();
-        }
-    }
-    else {
-        qDebug()<<db.lastError().text();
-    }
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    //v.exec();
     return a.exec();
 }
