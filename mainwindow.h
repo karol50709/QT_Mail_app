@@ -5,6 +5,7 @@
 #include "tabwidgetsettings.h"
 
 #include <QMainWindow>
+#include <QStringListModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +30,7 @@ private:
     Ui::MainWindow *ui;
     SendEmail * sendEmail;
     TabWidgetSettings *tabWidgetSettings;
+    QStringListModel *model;
     void dodajNowyMailDoTabeli(QString temat, QString nadawca, QString Data, QString etykieta);
     void zaladujKontaDoTabeli();
 };

@@ -3,6 +3,10 @@
 #include "tabwidgetsettings.h"
 #include "ui_mainwindow.h"
 #include "wiadomosc.h"
+#include <QtSql>
+#include <QDebug>
+
+#include <QStringListModel>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->maile->setSelectionBehavior(QAbstractItemView::SelectRows);
     dodajNowyMailDoTabeli("","","","");
     dodajNowyMailDoTabeli("","","","");
+    model = new QStringListModel(this);
     //Wiadomosc *ws = new Wiadomosc("temat","nullptr","ty@email.pl","2020.01.31 16:26","wazne","ps");
     Wiadomosc w;
     ui->maile->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -47,6 +52,14 @@ void MainWindow::dodajNowyMailDoTabeli(QString temat, QString nadawca, QString D
 
 void MainWindow::zaladujKontaDoTabeli(){
     qDebug()<<"ladowanie maili";
+    QStringList list;
+    QSqlQuery query1 ;
+    query1.exec("select * from konf_mail");
+    while (query1.next()) {
+        list.append(query1.value("mail_login").toString());
+    }
+    model->setStringList(list);
+    ui->listView->setModel(model);
 }
 
 
